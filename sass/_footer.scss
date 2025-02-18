@@ -1,0 +1,6 @@
+@use "base" as *;
+
+.footer {
+  background-color: rebeccapurple;
+  grid-column: full-start/full-end;
+}
