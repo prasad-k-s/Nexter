@@ -16,14 +16,20 @@
 .feature {
   display: grid;
 
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 6rem 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+
+  @media only screen and (max-width: $bp-small) {
+  }
 
   &__icon {
     fill: $color-primary;
     font-size: 4.5rem;
     grid-row: 1 / span 2;
+
+    justify-self: center;
+    align-self: start;
 
     transform: translateY(-1rem);
   }
